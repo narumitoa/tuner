@@ -64,7 +64,7 @@ $(document).ready(function() {
                 $("title").html(result.name + " - " + title);
             },
             error: function(textStatus) {
-                if ((textStatus = "abort")) {
+                if (textStatus === "abort") {
                     name.text("Canceled");
                 }
                 else {
