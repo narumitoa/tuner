@@ -2,9 +2,9 @@ var historylist = [];
 
 $(document).ready(function() {
     var player = $("#player"),
-    next = $("#player-wrapper #next"),
-    name = $("#player-wrapper #name"),
-    sicon = $("#player-wrapper #sicon"),
+    next = $("#js-player-wrapper #next"),
+    name = $("#js-player-wrapper #name"),
+    sicon = $("#js-player-wrapper #sicon"),
     img = $("body"),
     repeat = $(".jp-repeat"),
     title = $("title").html();
@@ -120,7 +120,7 @@ $(document).ready(function() {
         supplied:"oga",
         solution:"html",
         volume: 1,
-        cssSelectorAncestor: "#player-wrapper"
+        cssSelectorAncestor: "#js-player-wrapper"
     });
 
     //下一个
@@ -180,10 +180,10 @@ $(document).ready(function() {
 
     //搜索图标
     sicon.click(function() {
-        if ($("#search-box").css('display') == 'none') {
-            $("#search-box").css("display","block");
+        if ($("#js-search-box").css('display') == 'none') {
+            $("#js-search-box").css("display","block");
         }else {
-            $("#search-box").css("display","none");
+            $("#js-search-box").css("display","none");
         }
     });
 
