@@ -5,7 +5,7 @@ class APITest extends TestCase
     
     public function testMusic()
     {
-         $this->get('/api/music')->seeJson();
+         $this->get('/api/music')->seeJsonStructure(['id', 'name', 'music', 'image']);
     }
     
     public function testMusicId()
